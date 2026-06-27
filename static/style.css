@@ -1,1 +1,27 @@
+/static/style.css
+Simple People Counter
+Count visible people from an RTSP camera stream or uploaded video using Python, Flask, OpenCV, and YOLO.
 
+Idle
+RTSP Camera Stream
+Example: rtsp://username:password@192.168.1.100:554/stream1
+
+Upload Video
+Supported formats: mp4, avi, mov, mkv, webm
+
+Current Count
+0
+
+Max Count
+0
+
+FPS
+0
+
+Frames
+0
+
+Live Output
+This tool counts visible people per frame. It does not identify people or perform facial recognition.
+
+/static/app.jsscript>
