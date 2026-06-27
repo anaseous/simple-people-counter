@@ -29,31 +29,25 @@ A modern web application that counts visible people from:
 
 ---
 
-## Screenshots
+# Screenshots
 
-### Main Dashboard
+## Dashboard
 
-> After running the application, you will see:
-
-![Dashboard](https://via.placeholder.com/1200x700.png?text=Simple+People+Counter+Dashboard)
+![Dashboard](screenshots/dashboard.png)
 
 ---
 
-### RTSP Camera Example
+## RTSP Camera Example
 
-![RTSP Example](https://via.placeholder.com/1200x700.png?text=RTSP+Camera+People+Counting)
-
----
-
-### Video Upload Example
-
-![Video Upload](https://via.placeholder.com/1200x700.png?text=Uploaded+Video+People+Detection)
+![RTSP](screenshots/rtsp-example.png)
 
 ---
 
-### Detection Output
+## Video Upload
 
-![Detection Output](https://via.placeholder.com/1200x700.png?text=People+Detected+with+Bounding+Boxes)
+![Uploadut
+
+screenshots/detection-output.png
 
 ---
 
