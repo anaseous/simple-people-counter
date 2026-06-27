@@ -370,3 +370,224 @@ Stream Results To Browser
 
 3. OpenCV opens the stream or file.
 
+4. YOLO analyzes each frame.
+
+5. Only the person class is detected.
+
+6. Bounding boxes are drawn.
+
+7. Current people count is calculated.
+
+8. Statistics are updated in real time.
+
+9. Processed video is streamed back to the browser.
+
+---
+
+# Example Statistics
+
+```text
+Current Count : 14
+
+Max Count     : 21
+
+FPS           : 24.3
+
+Frames        : 12540
+```
+
+---
+
+# Troubleshooting
+
+## Error: No module named ultralytics
+
+Run:
+
+```bash
+pip install ultralytics
+```
+
+---
+
+## Error: No module named cv2
+
+Run:
+
+```bash
+pip install opencv-python-headless
+```
+
+---
+
+## RTSP Stream Not Opening
+
+Verify:
+
+- Camera reachable
+- RTSP enabled
+- Correct credentials
+- Firewall allows RTSP
+- VLC can open stream
+
+Test in VLC:
+
+```text
+Media
+→ Open Network Stream
+→ Paste RTSP URL
+```
+
+---
+
+## Video Not Uploading
+
+Verify:
+
+```text
+.mp4
+.avi
+.mov
+.mkv
+.webm
+```
+
+Files larger than available RAM may process slowly.
+
+---
+
+# Performance Recommendations
+
+Minimum:
+
+```text
+CPU: Intel i5
+RAM: 8GB
+```
+
+Recommended:
+
+```text
+CPU: Intel i7 / Ryzen 7
+RAM: 16GB+
+GPU: NVIDIA RTX 3060+
+```
+
+---
+
+# Future Improvements
+
+Planned enhancements:
+
+- Unique People Tracking
+- Line Crossing Counter
+- Entrance / Exit Detection
+- Multi-Camera Support
+- Camera Groups
+- Zone-Based Counting
+- Heat Maps
+- Dashboard Analytics
+- Historical Reports
+- PostgreSQL Integration
+- Docker Deployment
+- Kubernetes Deployment
+- GPU Acceleration
+- Telegram Alerts
+- WhatsApp Alerts
+- REST API
+- CSV Export
+- PDF Reports
+
+---
+
+# Security Notes
+
+Never commit:
+
+```text
+RTSP passwords
+
+Camera credentials
+
+Production camera IP addresses
+
+Private videos
+
+Customer footage
+
+API keys
+
+Environment files
+```
+
+Add sensitive files to:
+
+```text
+.gitignore
+```
+
+---
+
+# Upload To GitHub
+
+Initialize repository:
+
+```bash
+git init
+```
+
+Add files:
+
+```bash
+git add .
+```
+
+Commit:
+
+```bash
+git commit -m "Initial release"
+```
+
+Connect GitHub repository:
+
+```bash
+git remote add origin https://github.com/anaseous/simple-people-counter.git
+```
+
+Push:
+
+```bash
+git branch -M main
+
+git push -u origin main
+```
+
+---
+
+# Author
+
+**Anas Ali Omar Abdalla**
+
+Senior EUC Engineer | Cloud & Infrastructure Engineer | Microsoft 365 | Azure | IoT & Telematics | Digital Transformation
+
+GitHub:
+
+```text
+https://github.com/anaseous
+```
+
+LinkedIn:
+
+```text
+Add Your LinkedIn URL Here
+```
+
+Location:
+
+```text
+Abu Dhabi, UAE
+```
+
+---
+
+⭐ If you find this project useful, please consider starring the repository.
