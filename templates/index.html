@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple People Counter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    /static/style.css
+</head>
+<body>
+
+<div class="page">
+
+    <header class="hero">
+        <div>
+            <h1>Simple People Counter</h1>
+            <p>
+                Count visible people from an RTSP camera stream or uploaded video using Python, Flask, OpenCV, and YOLO.
+            </p>
+        </div>
+
+        <div class="status-card">
+            <span id="status">Idle</span>
+        </div>
+    </header>
+
+    <main class="grid">
+
+        <section class="card">
+            <h2>RTSP Camera Stream</h2>
+            <p class="hint">
+                Example: rtsp://username:password@192.168.1.100:554/stream1
+            </p>
+
+            <input
+                id="rtspUrl"
+                type="text"
+                placeholder="Enter RTSP URL"
+            >
+
+            <button onclick="startRtsp()">Start RTSP</button>
+        </section>
+
+        <section class="card">
+            <h2>Upload Video</h2>
+            <p class="hint">
+                Supported formats: mp4, avi, mov, mkv, webm
+            </p>
+
+            <input
+                id="videoFile"
+                type="file"
+                accept="video/*"
+            >
+
+            <button onclick="uploadVideo()">Upload & Count</button>
+        </section>
+
+    </main>
+
+    <section class="stats">
+
+        <div class="stat-box">
+            <h3>Current Count</h3>
+            <p id="currentCount">0</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>Max Count</h3>
+            <p id="maxCount">0</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>FPS</h3>
+            <p id="fps">0</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>Frames</h3>
+            <p id="frames">0</p>
+        </div>
+
+    </section>
+
+    <section class="viewer-card">
+        <div class="viewer-header">
+            <h2>Live Output</h2>
+
+            <div class="actions">
+                <button class="secondary" onclick="refreshFeed()">Refresh Feed</button>
+                <button class="danger" onclick="stopProcessing()">Stop</button>
+            </div>
+        </div>
+
+        <div class="video-wrapper">
+            <img id="videoFeed" alt="Video output will appear here">
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            This tool counts visible people per frame. It does not identify people or perform facial recognition.
+        </p>
+    </footer>
+
+</div>
+
+/static/app.jsscript>
+</body>
+</html>
