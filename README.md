@@ -45,10 +45,11 @@ A modern web application that counts visible people from:
 
 ## Video Upload
 
-![Uploadut
+![Video_upload](screenshots/video-upload.png)
 
-screenshots/detection-output.png
+## Detection Output
 
+![Detection_Output](screenshots/detection-output.png)
 ---
 
 # Repository Structure
